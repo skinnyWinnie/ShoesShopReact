@@ -1,0 +1,13 @@
+.questions {
+    padding: 60px 19%;
+}
+
+.questionsHeader {
+    font-size: 30px;
+    color: #444B58;
+    margin-bottom: 40px;
+    
+}
+.questions__item1 {
+    border-top: 1px solid #000;
+}

@@ -1,0 +1,134 @@
+.popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .45);
+    top: 0;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popupWrapper {
+    max-width: 1140px;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.popupContent {
+    display: flex;
+    gap: 20px;
+}
+.popupRight {
+    flex: 1;
+    padding-right: 90px;
+}
+.popupRight, 
+.popupGallery {
+    max-width: 520px;
+}
+.redStar {
+    color: red;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+.popupDescr,
+.popupSpecifications {
+    font-size: 24px;
+    color: #444B58;
+}
+.popupTxt {
+    color: #444B58;
+}
+.popupArticle, 
+.popupQuantity {
+    display: inline-block;
+    color: #B2B5BB;
+    margin-right: 47px;
+    margin-bottom: 40px;
+}
+.productName {
+    color: #444B58;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.rating {
+    margin-bottom: 20px;
+}
+.chooseSize {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.popupSize {
+    width: 70px;
+    height: 32px;
+    background-color: inherit;
+    border: 1px solid #B2B5BB;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+.popupSize.active {
+    border-color: red;
+    transform: scale(1.05);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+.popupPrices {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 82px;
+}
+.newPrice {
+    color: #444B58;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.oldPrice {
+    font-size: 16px;
+    color: #B2B5BB;
+}
+.popupOrderBtn {
+    background-color: #F14F4F;
+    color: #fff;
+    width: 100%;
+    padding: 22px 0;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.popupPluses {
+    color: #B2B5BB;
+    list-style-type: none;
+    padding-left: 26px;
+    line-height: 1.5em;
+    margin-bottom: 53px;
+}
+.popupPluses li {
+    position: relative;
+}
+.popupPluses li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    width: 15px;
+    height: 12px;
+    background-image: url(../../assets/Vector.svg);
+}
+.popupSpecifications {
+    margin-bottom: 20px;
+}
+
+.specificationsList {
+    color: #444B58;
+    list-style-type: none;
+    line-height: 1.5em;
+}

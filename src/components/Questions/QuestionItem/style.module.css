@@ -1,0 +1,22 @@
+
+.questionsItem {
+    margin: -1px 11% 0 11%;
+    padding: 27px 0 0 0;
+    color: #242424;
+    
+    border-bottom: 1px solid #000;
+}
+
+.questionsItemWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23px;
+}
+.questionsNumber {
+    font-size: 20px;
+    font-weight: bold;
+}
+.questionsCloser {
+    height: 100%;
+}

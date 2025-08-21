@@ -1,0 +1,13 @@
+.ourTeam {
+    background: #484283 url(../../assets/Group\ 72.svg) no-repeat 100% 0;
+    padding: 60px 19%;
+    color: #fff;
+}
+.ourTeamHeader {
+    margin-bottom: 40px;
+}
+.ourTeamWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+}

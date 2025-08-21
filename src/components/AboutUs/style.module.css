@@ -1,0 +1,31 @@
+.aboutUs {
+    display: flex;
+    padding:  0 19%;
+    background-color: #484283;
+    background-image: url(../../assets/figure.svg);
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.aboutUs__left {
+    position: relative;
+    margin-top: 222px;
+    max-width: 500px;
+}
+.aboutUs__left_header {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.aboutUs__lefttxt {
+    font-size: 17px;
+    line-height: 1.4em;
+    padding-right: 125px;
+}
+
+.aboutUs__left_logo {
+    display: inline-block;
+    position: absolute;
+    right: 65px;
+}
+.aboutUs__right_img {
+    display: block;
+}

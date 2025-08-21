@@ -1,0 +1,103 @@
+.orderPopup {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .45);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0; 
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+.orderPopupContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    max-height: 902px;
+    padding: 40px;
+
+}
+.contentHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+.headerTxt {
+    color: #444B58;
+    font-weight: bold;
+    font-size: 17px;
+    display: inline-block;
+    margin-right: auto;
+}
+.headerOrderNumber {
+    display: inline-block;
+    color: #B2B5BB;
+}
+.orderBasket {
+    width: 500px;
+    
+    
+}
+.basketContent {
+    border: 1px solid #D9D9D9;
+    padding: 30px;
+}
+.contentQuantity,
+.contentTotalSum  {
+    color: #444B58;
+    margin-bottom: 20px;
+}
+.orderCompound {
+    margin-bottom: 17px;
+    position: relative;
+    color: #000;
+}
+.orderList {
+    max-height: 275px;
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+}
+
+
+.buyerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.buyerName,
+.buyerTel,
+.buyerEmail{
+    height: 60px;
+    border: none;
+    background-color: #f6f6f6;
+    padding-left: 10px;
+}
+.buyerName::placeholder,
+.buyerTel::placeholder,
+.buyerEmail::placeholder {
+    padding-left: 20px;
+}
+
+.makeOrder {
+    width: 220px;
+    height: 60px;
+    border: none;
+    background-color: #F14F4F;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.UpArrow {
+    width: 7px;
+    height: 4px;
+    position: absolute;
+    top: 10px;
+    left: 105px;
+}

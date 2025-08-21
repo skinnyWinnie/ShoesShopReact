@@ -1,0 +1,43 @@
+.productGridItem {
+    position: relative;
+}
+.productGridItem:hover .cardImage {
+    filter: blur(4px) brightness(0.8);
+}
+
+.productGridItem:hover .imgWrapper {
+    opacity: 1;
+  }
+
+
+.imgWrapper {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+}
+.cardIcon {
+    width: 100px;
+    height: 100px;
+    fill: white;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.cardPrice {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444B58;
+}
+
+.cardImage {
+    
+}

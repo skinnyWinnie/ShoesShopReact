@@ -1,0 +1,37 @@
+.contentListItem {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.contentItemImage {
+    margin-right: 10px;
+    margin-top: 11px;
+}
+
+.contentItemImage img {
+    width: 100px;
+    height: 57px;
+}
+
+.contentItemDescr {
+    margin-bottom: 14px;
+    color: #444B58;
+}
+.itemMainPrice {
+    display: inline-block;
+    margin-top: 14px;
+}
+.contentItemDelete {
+    margin-left: auto;
+}
+.itemBasketBtn {
+    background-image: url('../../../assets/icons/trash\ 1.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #fff;
+    padding: 30px;
+}

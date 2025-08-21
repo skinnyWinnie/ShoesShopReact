@@ -1,0 +1,20 @@
+.footer {
+    padding: 28px 19%;
+    background-color: #444B58;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerList {
+    display: flex;
+}
+.footerListLink {
+    list-style-type: none;
+}
+.footerListLink a {
+    text-decoration: none;
+    color: #fff;
+}
+.footerListLink:not(:last-child) {
+    margin-right: 40px;
+}

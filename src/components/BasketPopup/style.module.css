@@ -1,0 +1,107 @@
+.basketPopup {
+    position: fixed;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, .45);
+    top: 0;
+    left: 0;
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.basketWrapper {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    height: 414px;
+    top: 68px;
+    right: 0;
+    margin-left: auto;
+    margin-right: 17.6%;
+    max-height: 80%;
+}
+
+.basketPopupContent {
+    width: 480px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+
+.contentList {
+    width: 480px;
+    max-height: 323px;
+    min-height: 120px;
+    padding: 0;
+    margin: 0;
+}
+
+.contentListItem {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.contentItemImage {
+    margin-right: 10px;
+    margin-top: 11px;
+}
+
+.contentItemImage img {
+    width: 100px;
+    height: 57px;
+}
+
+.contentItemDescr {
+    margin-bottom: 14px;
+    color: #444B58;
+}
+.itemMainPrice {
+    display: inline-block;
+    margin-top: 14px;
+}
+.contentItemDelete {
+    margin-left: auto;
+}
+.itemBasketBtn {
+    background-image: url('../../assets/icons/trash 1.svg');
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #fff;
+}
+.basketPopupFooter {
+    width: 440px;
+    padding: 20px 20px 13px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.popupFooterSum {
+    color: #444B58;
+}
+.footerSumTxt {
+    margin-bottom: 10px;
+}
+
+.footerSumLink {
+    background-color: #F14F4F;
+    text-decoration: none;
+    color: #fff;
+    padding: 17px 47px;
+    border-radius: 4px;
+    pointer-events: auto;
+    border: none;
+}
+
+
+.emptyBasket {
+    color:  black;
+    text-align: center;
+    font-size: 16px;
+}
+
+

@@ -1,0 +1,13 @@
+.ourTeamCard {
+    margin-bottom: 40px;
+}
+.ourTeamCardImg {
+    display: block;
+    margin-bottom: 20px;
+    width: 380px;
+    height: 400px;
+}
+.ourTeamCardName {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
