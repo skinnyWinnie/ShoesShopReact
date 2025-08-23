@@ -1,0 +1,43 @@
+/* Стили для рейтинга */
+.rating {
+    display: flex;
+    gap: 4px;
+    margin: 8px 0;
+}
+
+.fas {
+    width: 20px;
+    height: 20px;
+}
+
+.faStar {
+    font-size: 20px;
+}
+
+.redStar {
+    color: #ff4444;
+}
+
+.grayStar {
+    color: #ccc;
+}
+
+.clickable {
+    transition: transform 0.2s ease;
+}
+
+.clickable:hover {
+    transform: scale(1.2);
+}
+
+/* Секции рейтинга */
+.ratingSection, .userRatingSection {
+    margin: 15px 0;
+}
+
+.ratingSection h4, .userRatingSection h4 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+

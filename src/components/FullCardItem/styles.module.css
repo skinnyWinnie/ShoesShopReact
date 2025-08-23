@@ -22,8 +22,9 @@
 }
 .popupRight {
     flex: 1;
+    max-width: 430px;
     padding-right: 90px;
-}
+}p
 .popupRight, 
 .popupGallery {
     max-width: 520px;
@@ -36,7 +37,12 @@
 
 
 
-
+.popupDescr {
+    margin-top: 40px;
+}
+.popupSpecifications {
+    margin-top: 0;
+}
 .popupDescr,
 .popupSpecifications {
     font-size: 24px;
@@ -65,13 +71,18 @@
     margin-bottom: 20px;
 }
 
+.sizeWrapper {
+    display: flex;
+    gap: 20px;
+}
+
 .popupSize {
     width: 70px;
     height: 32px;
     background-color: inherit;
     border: 1px solid #B2B5BB;
     border-radius: 4px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 .popupSize.active {
     border-color: red;
@@ -82,7 +93,6 @@
     display: flex;
     align-items: center;
     gap: 32px;
-    margin-bottom: 82px;
 }
 .newPrice {
     color: #444B58;
@@ -108,7 +118,7 @@
     list-style-type: none;
     padding-left: 26px;
     line-height: 1.5em;
-    margin-bottom: 53px;
+    margin-bottom: 37px;
 }
 .popupPluses li {
     position: relative;
@@ -131,4 +141,38 @@
     color: #444B58;
     list-style-type: none;
     line-height: 1.5em;
+    padding: 0;
+}
+
+
+.mainImage {
+    width: 520px;
+    height: 461px;
+}
+
+.mainImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnails {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    border-radius: 4px;
+}
+
+.ratingText {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.ratingThanks {
+    display: block;
+    font-size: 14px;
+    color: #4CAF50;
+    margin-top: 5px;
+    font-weight: bold;
 }

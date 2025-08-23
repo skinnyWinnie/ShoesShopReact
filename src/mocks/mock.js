@@ -38,36 +38,66 @@ const CARDITEM = [
         url: 'i.jpg',
         descr: 'Женские кроссовки Puma Force 1 Shadow',
         price: 11234,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
     },
     {
         id: 2,
         url: 'i(1).jpg',
         descr: 'qwkmwgnklgkln',
         price: 21222,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
     },
     {
         id: 3,
         url: 'i(2).jpg',
         descr: 'qwkmwgnklgkln',
         price: 312312,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
     },
     {
         id: 4,
         url: 'i(3).jpg',
         descr: 'qwkmwgnklgkln',
         price: 412312,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
     },
     {
         id: 5,
         url: 'i(4).jpg',
         descr: 'qwkmwgnklgkln',
         price: 51213,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
     },
     {
         id: 6,
         url: 'i(5).jpg',
         descr: 'qwkmwgnklgkln',
         price: 6123123,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
     },
 ]
 
