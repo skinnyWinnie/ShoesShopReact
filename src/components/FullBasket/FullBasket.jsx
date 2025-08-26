@@ -1,9 +1,8 @@
 import styles from './styles.module.css'
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useCart } from '../CardContext';
 import { FullBasketItem } from './FullBasketItem/FullBasketItem';
 import { useBodyScrollLock } from '../useBodyScrollLock';
-
 
 
 export function FullBasket({ isOpen, onClose }) {
@@ -14,6 +13,11 @@ export function FullBasket({ isOpen, onClose }) {
     const { cart } = useCart();
 
     const basketRef = useRef(null);
+    const [isOrderVisible, setIsOrderVisible] = useState(true)
+
+    const toggleVisibility = () => {
+        setIsOrderVisible(prev => !prev)
+    }
 
     useEffect(() => {
         if (!isOpen) return;
@@ -64,16 +68,20 @@ export function FullBasket({ isOpen, onClose }) {
                                 }, 0)
                                 }</b>
                             </p>
-                            <p className={styles.orderCompound}>
-                                Состав заказа <img alt='' src="/UpArrow.png" className={styles.UpArrow}/>
+                            <p className={styles.orderCompound} onClick={toggleVisibility}>
+                                Состав заказа <img alt='' src="/UpArrow.png" className={`${styles.UpArrow} ${!isOrderVisible ? styles.arrowRotated : ''}`} />
                             </p>
-                            <ul className={styles.orderList}>
-                                {cart.map((item, index) => (
-                                    <FullBasketItem key={`${item.id}-${index}`} item={item} id={item.id} /> 
-                                )
-                                )}
-                                   
-                            </ul>
+                            { isOrderVisible && (
+                                <div className={`${styles.orderListContainer} ${isOrderVisible ? styles.visible : styles.hidden}`}>
+                                    <ul className={`${styles.orderList} ${!isOrderVisible ? styles.orderListVisible : styles.orderListHidden}`}>
+                                        {cart.map((item, index) => (
+                                            <FullBasketItem key={`${item.id}-${index}`} item={item} id={item.id} /> 
+                                        )
+                                        )}
+                                    
+                                    </ul>
+                                </div>)
+                            }
                         </div>
 
                         <div className={styles.buyerInfo}>

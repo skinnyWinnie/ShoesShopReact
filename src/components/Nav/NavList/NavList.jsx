@@ -4,6 +4,7 @@ import NavBasket from "../NavBasket/NavBasket";
 import { useState} from "react";
 import BasketPopup from "../../BasketPopup/BasketPopup";
 import { FullBasket } from "../../FullBasket/FullBasket.jsx";
+
 const StyledNavList = styled.ul`
     display: flex;
     flex-wrap: wrap;

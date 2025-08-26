@@ -54,6 +54,7 @@
     margin-bottom: 17px;
     position: relative;
     color: #000;
+    cursor: pointer;
 }
 .orderList {
     max-height: 275px;
@@ -100,4 +101,29 @@
     position: absolute;
     top: 10px;
     left: 105px;
+    transition: transform 0.4s ease;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.arrowRotated {
+    transform: rotate(180deg)
+}
+.orderListContainer {
+    transition: opacity 0.8s ease;
+    overflow: hidden;
+}
+
+/* Видимое состояние */
+.orderListContainer.visible {
+    opacity: 1;
+    max-height: 1000px; /* Достаточно большое значение */
+    visibility: visible;
+}
+
+/* Скрытое состояние */
+.orderListContainer.hidden {
+    opacity: 0;
+    max-height: 0;
+    visibility: hidden;
 }
