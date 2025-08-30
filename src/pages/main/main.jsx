@@ -21,12 +21,15 @@ function Main () {
     return (
         <StyledMain>
             <StyledH2>Каталог</StyledH2>
-            <Catalog></Catalog>
-            <AboutUs/>
-            <Selection/>
-            <OurTeam/>
-            <Questions/>
-            <Contacts/>
+                
+                    <Catalog/>
+                    <AboutUs/>
+                    <Selection/>
+                    <OurTeam/>
+                    <Questions/>
+                    <Contacts/>
+                    
+                
             <QuestionsFromUs/>
         </StyledMain>
     );

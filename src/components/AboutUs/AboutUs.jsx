@@ -3,6 +3,7 @@ import left from "../../assets/icons/cite.png"
 import right from "../../assets/Mask Group.png"
 
 export default function AboutUs () {
+
     return (
         <section className={styles.aboutUs}>
             <div className={styles.aboutUs__left}>

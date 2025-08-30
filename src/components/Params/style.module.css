@@ -158,11 +158,11 @@ label {
 .sizeList *:hover:not(:disabled) {
     border-color: red;
   }
-.sizeList *.active {
+/* .sizeList *.active {
     border-color: red;
     transform: scale(1.05);
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-}
+} */
   
 .sizeList *:disabled {
     opacity: 0.5;
@@ -187,4 +187,52 @@ label {
     font-weight: bold;
     background-color: #FFF4EE;
     text-align: center;
+}
+
+/* Стили для кнопок размеров */
+
+
+.sizeButton:hover {
+    border-color: #ff4444;
+    transform: translateY(-1px);
+}
+
+.sizeActive {
+    border-color: #ff4444 !important;
+    box-shadow: 0 2px 8px rgba(255, 68, 68, 0.3);
+}
+
+.sizeActive:hover {
+    background: #cc0000 !important;
+    border-color: #cc0000 !important;
+    transform: translateY(-1px);
+}
+
+/* Анимация для плавного перехода */
+.sizeButton {
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/* Кнопки действий */
+.agreeSize, .resetSize {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.agreeSize:hover {
+    background: #444B8D;
+    transform: translateY(-1px);
+}
+
+
+
+.resetSize:hover {
+    border: 1px solid red;
+    transform: translateY(-1px);
+}
+
+.agreeSize:active, .resetSize:active {
+    transform: translateY(0);
 }

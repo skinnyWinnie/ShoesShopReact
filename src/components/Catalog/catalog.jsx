@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Params from "../Params/params";
 import ProductGrid from "../ProductGrid/productGrid";
 
+
 const StyledCatalog = styled.section`
     display: flex;
     padding:  0 19%;
@@ -9,6 +10,7 @@ const StyledCatalog = styled.section`
 
 
 function Catalog () {
+    
     return (
         <StyledCatalog>
             <Params/>
