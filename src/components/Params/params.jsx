@@ -165,6 +165,7 @@ function Params () {
     const minPosition = ((priceRange.min - MIN_PRICE) / (MAX_PRICE - MIN_PRICE)) * 100;
     const maxPosition = ((priceRange.max - MIN_PRICE) / (MAX_PRICE - MIN_PRICE)) * 100;
 
+    
 
     return(
         <StyledParams>
@@ -222,17 +223,6 @@ function Params () {
                 </div>
                 <div className={styles.sizeWrapper}>
                     <p className={styles.size}>Размер</p>
-                    {/* <div className={styles.sizeList}>
-                        <button>35</button>
-                        <button>36</button>
-                        <button>37</button>
-                        <button>38</button>
-                        <button>39</button>
-                        <button>40</button>
-                        <button>41</button>
-                        <button>42</button>
-                        <button>43</button>
-                    </div> */}
                     <div className={styles.sizeList}>
                     {[35, 36, 37, 38, 39, 40, 41, 42, 43].map(size => (
                         <button

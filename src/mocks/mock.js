@@ -1,31 +1,31 @@
 
 const img = [
-    {   id: 1,
+    {   id: "Максим",
         url: 'MaskGroup.jpg',
         name: "Максим",
         surname: "Золотарев"
     },
-    {   id: 2,
+    {   id: "Иван",
         url: "MaskGroup(1).jpg",
         name: "Иван",
         surname: "Золотарев"
     },
-    {   id: 3,
+    {   id: "Роман",
         url: "MaskGroup(2).jpg",
         name: "Максим",
         surname: "Золотарев"
     },
-    {   id: 4,
+    {   id: "Майя",
         url: "MaskGroup(3).jpg",
         name: "Майя",
         surname: "Золотарева"
     },
-    {   id: 5,
+    {   id: "Софья",
         url: "MaskGroup(4).jpg",
         name: "Софья",
         surname: "Золотарева"
     },
-    {   id: 6,
+    {   id: "Игнат",
         url: "MaskGroup(5).jpg",
         name: "Игнат",
         surname: "Золотарев"
@@ -93,6 +93,94 @@ const CARDITEM = [
         url: 'i(5).jpg',
         descr: 'qwkmwgnklgkln',
         price: 6123123,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
+    },
+    {
+        id: 7,
+        url: 'i.jpg',
+        descr: 'Женские кроссовки Puma Force 1 Shadow',
+        price: 11234,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
+    },
+    {
+        id: 8,
+        url: 'i.jpg',
+        descr: 'Женские кроссовки Puma Force 1 Shadow',
+        price: 11234,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
+    },
+    {
+        id: 9,
+        url: 'i.jpg',
+        descr: 'Женские кроссовки Puma Force 1 Shadow',
+        price: 11234,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
+    },
+    {
+        id: 10,
+        url: 'i.jpg',
+        descr: 'Женские кроссовки Puma Force 1 Shadow',
+        price: 11234,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
+    },
+    {
+        id: 11,
+        url: 'i.jpg',
+        descr: 'Женские кроссовки Puma Force 1 Shadow',
+        price: 11234,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
+    },
+    {
+        id: 12,
+        url: 'i.jpg',
+        descr: 'Женские кроссовки Puma Force 1 Shadow',
+        price: 11234,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
+    },
+    {
+        id: 13,
+        url: 'i.jpg',
+        descr: 'Женские кроссовки Puma Force 1 Shadow',
+        price: 11234,
+        male: 'Женский',
+        colors: 'белый, розовый, красный, черный, синий',
+        compound: 'натуральная кожа',
+        country: 'Вьетнам',
+        rating: 4.3
+    },
+    {
+        id: 14,
+        url: 'i.jpg',
+        descr: 'Женские кроссовки Puma Force 1 Shadow',
+        price: 11234,
         male: 'Женский',
         colors: 'белый, розовый, красный, черный, синий',
         compound: 'натуральная кожа',

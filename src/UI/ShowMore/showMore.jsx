@@ -10,11 +10,12 @@ const StyledShowMore = styled.button`
     background-color: #F14F4F;
     border: none;
     color: #fff;
+    cursor: pointer;
 `
 
-function ShowMore ({children}) {
+function ShowMore ({children, onClick}) {
     return (
-        <StyledShowMore>
+        <StyledShowMore onClick={onClick}>
             {children}
         </StyledShowMore>
     )
