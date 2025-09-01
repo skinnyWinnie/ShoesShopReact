@@ -96,7 +96,7 @@
     width: 20px;
     height: 20px;
 }
-label {
+.sexForm label {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -122,8 +122,8 @@ label {
     content: "";
     position: absolute;
     display: none;
-    left: 5px;
-    top: 0px;
+    left: 6px;
+    top: 1px;
     width: 5px;
     height: 10px;
     border: solid #DBBBA9;

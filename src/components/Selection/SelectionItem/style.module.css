@@ -1,0 +1,46 @@
+.customCheckbox {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.customCheckbox input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+.inputWrapper {
+    display: flex;
+}
+.checkmark {
+    position: relative;
+    display: inline-block;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #DBBBA9;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+  .customCheckbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #DBBBA9;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+
+  .customCheckbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .formItemImg {
+    margin-bottom: 10px;
+  }
