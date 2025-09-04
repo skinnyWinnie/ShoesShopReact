@@ -7,7 +7,7 @@ const StyledBtnRed = styled.a`
     height: 60px;
     color: #fff;
     text-decoration: none;
-    background-color: #F14F4F;
+    background-color: var(--button-color);
     margin-top: 35px;
     text-align: center;
     line-height: 60px;

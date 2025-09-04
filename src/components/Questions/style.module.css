@@ -4,7 +4,7 @@
 
 .questionsHeader {
     font-size: 30px;
-    color: #444B58;
+    color: var(--color-text);
     margin-bottom: 40px;
     
 }

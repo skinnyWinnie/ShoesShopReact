@@ -9,7 +9,7 @@ import QuestionsFromUs from "../../components/QuestionsFromUs/QuestionsFromUs";
 const StyledMain = styled.div`
     margin-top: 60px;
     margin-bottom: 40px;
-    color: #444B58;
+    color: var(--color-text);
 `
 const StyledH2 = styled.h2`
     padding: 0 19%;

@@ -18,7 +18,7 @@ export default function Selection () {
         if(currentStep < 4) {
             setCurrentStep(prev => prev + 1)
         } else {
-            console.log('✅ ВСЕ ДАННЫ ФОРМЫ:', updatedData);
+            console.log('✅ ВСЕ ДАННЫE ФОРМЫ:', updatedData);
         }
 
 

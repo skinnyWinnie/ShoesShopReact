@@ -12,6 +12,10 @@ const StyledNavList = styled.ul`
     align-items: center;
     color: #fff;
     margin: 0;
+
+    @media(max-width: 1385px) {
+      
+    }
 `
 
 function NavList() {

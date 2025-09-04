@@ -14,7 +14,7 @@
 .liBtn {
     border: none;
     background-color: #fff;
-    color: #B2B5BB;
+    color: var(--color-gray);
     margin-right: 10px;
     cursor: pointer;
     padding: 20px 0;

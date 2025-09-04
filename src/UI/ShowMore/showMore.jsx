@@ -7,7 +7,7 @@ const StyledShowMore = styled.button`
     transform: translate(-50%, -50%);
     width: 200px;
     height: 60px;
-    background-color: #F14F4F;
+    background-color: var(--button-color);
     border: none;
     color: #fff;
     cursor: pointer;

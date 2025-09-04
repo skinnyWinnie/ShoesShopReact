@@ -4,7 +4,7 @@
     margin-bottom: 20px;
 }
 .selectionFormHeader {
-    color: #444B58;
+    color: var(--color-text);
     margin: 20px 0;
     font-weight: normal;
 }
@@ -17,7 +17,7 @@
 }
 
 .selection3Textarea::placeholder {
-    color: #DBBBA9;
+    color: var(--color-small-text);
 }
 
 .selectionFooter {
@@ -28,7 +28,7 @@
     color: #808080;
 }
 .selectionNext {
-    color: #444B58;
+    color: var(--color-text);
     padding: 17px 42px;
     background-color: #FFF4EE;
     font-size: 16px;

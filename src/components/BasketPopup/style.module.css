@@ -9,7 +9,6 @@
     z-index: 50;
     align-items: center;
     justify-content: center;
-    
 }
 
 .basketWrapper {
@@ -57,7 +56,7 @@
 
 .contentItemDescr {
     margin-bottom: 14px;
-    color: #444B58;
+    color: var(--color-text);
 }
 .itemMainPrice {
     display: inline-block;
@@ -81,14 +80,14 @@
     background-color: #fff;
 }
 .popupFooterSum {
-    color: #444B58;
+    color: var(--color-text);
 }
 .footerSumTxt {
     margin-bottom: 10px;
 }
 
 .footerSumLink {
-    background-color: #F14F4F;
+    background-color: var(--button-color);
     text-decoration: none;
     color: #fff;
     padding: 17px 47px;

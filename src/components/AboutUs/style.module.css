@@ -1,7 +1,7 @@
 .aboutUs {
     display: flex;
-    padding:  0 19%;
-    background-color: #484283;
+    padding:  0 var(--padding-unit);
+    background-color: var(--bg-color);
     background-image: url(../../assets/figure.svg);
     background-repeat: no-repeat;
     color: #fff;

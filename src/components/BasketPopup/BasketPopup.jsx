@@ -12,7 +12,7 @@ export default function BasketPopup ({ isOpen, onClose, onOpenFullBasket  }) {
 
     useBodyScrollLock(isOpen);
 
-    const { cart } = useCart();
+    const { cart, getTotalPrice } = useCart();
 
 
 
@@ -62,10 +62,11 @@ export default function BasketPopup ({ isOpen, onClose, onOpenFullBasket  }) {
                   <div className={styles.basketPopupFooter}>
                         <div className={styles.popupFooterSum}>
                             <p className={styles.footerSumTxt}>
-                                Итого: {cart.reduce((acc, item)=> {
+                                {/* Итого: {cart.reduce((acc, item)=> {
                                   return acc + item.price
                                 }, 0)
-                                }
+                                } */}
+                                {getTotalPrice().toFixed(2)} Руб
                             </p>
                         </div>
                         <button  className={styles.footerSumLink}  onClick={(e) => {e.preventDefault();

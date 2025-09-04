@@ -5,7 +5,7 @@
 }
 
 .selectionFormHeader {
-    color: #444B58;
+    color: var(--color-text);
     margin: 20px 0;
     font-weight: normal;
 }
@@ -19,13 +19,13 @@
     color: #808080;
 }
 .selectionNext {
-    color: #444B58;
+    color: var(--color-text);
     padding: 17px 42px;
     background-color: #FFF4EE;
     font-size: 16px;
     font-weight: bold;
     border-radius: 4px;
-    border-color: #444B58;
+    border-color: var(--color-text);
 }
 .selectionFooter {
     display: flex;

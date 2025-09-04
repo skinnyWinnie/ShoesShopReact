@@ -4,12 +4,23 @@ import { useCart } from '../CardContext';
 import FullCardRating from './FullCardRating/FullCardRating'
 
 export function FullCardItem({ item, onClose}) {
-    
 
+    const [currentSize, setCurrentSize] = useState(0)
+    const [orderData, setOrderData] = useState([])
+    
+    const [mainImage, setMainImage] = useState('/shoes/i.jpg')
     const [userRating, setUserRating] = useState(0); // Рейтинг пользователя
     const [productRating] = useState(item.rating || 4.5); // Средний рейтинг товара
 
-    const { addToCart } = useCart()
+    const { addToCart, cart } = useCart()
+
+    useEffect(() => {
+        console.log('Текущая корзина:', cart);
+    }, [cart]);
+
+    useEffect(() => {
+        console.log('Заказы обновлены:', orderData);
+    }, [orderData]);
 
     useEffect(() => {
         // Сохраняем исходное состояние скролла
@@ -36,6 +47,24 @@ export function FullCardItem({ item, onClose}) {
         }
     };
 
+
+    const handleOrderData = () => {
+        const newOrder = {
+            id: Date.now(),
+            name: item.descr,
+            price: item.price,
+            size: currentSize,
+            timestamp: new Date().toLocaleString()
+        }
+        setOrderData(prev => [...prev, newOrder])
+
+        addToCart(item);
+    }
+
+    const handleSizeClick = (size) => {
+        setCurrentSize(size);
+    };
+
     // Закрытие по ESC
     useEffect(() => {
         const handleEscape = (e) => {
@@ -56,15 +85,20 @@ export function FullCardItem({ item, onClose}) {
                 <div className={styles.popupContent}>
                     <div className={styles.popupGallery}>
                         <div className={styles.mainImage}>
-                            <img src={`${process.env.PUBLIC_URL}/shoes/${item.url}`} alt="MainImage" id="current-main"/>
+                            <img src={mainImage} alt="MainImage" id="current-main"/>
                         </div>
                         <div className={styles.thumbnails}>
-                            <img src={`${process.env.PUBLIC_URL}/shoes/modal-mini-${item.url}`} alt="" className={styles.thumbnail}/>
-                            <img src={`${process.env.PUBLIC_URL}/shoes/modal-mini-${item.url}`} alt="" className={styles.thumbnail}/>
-                            <img src={`${process.env.PUBLIC_URL}/shoes/modal-mini-${item.url}`} alt="" className={styles.thumbnail}/>
-                            <img src={`${process.env.PUBLIC_URL}/shoes/modal-mini-${item.url}`} alt="" className={styles.thumbnail}/>
-                            <img src={`${process.env.PUBLIC_URL}/shoes/modal-mini-${item.url}`} alt="" className={styles.thumbnail}/>
-                            <img src={`${process.env.PUBLIC_URL}/shoes/modal-mini-${item.url}`} alt="" className={styles.thumbnail}/>
+                            {
+                                [   '/shoes/i.jpg',
+                                    '/shoes/i(1).jpg',
+                                    '/shoes/i(2).jpg',
+                                    '/shoes/i(3).jpg',
+                                    '/shoes/i(4).jpg',
+                                    '/shoes/i(5).jpg',
+                                ].map((thumb,index)=> (
+                                    <img key={index} src={thumb} alt="" className={styles.thumbnail} onClick={() => setMainImage(thumb)} style={{ width: 70, height: 75, cursor: 'pointer' }}/>
+                                ))
+                            }
                         </div>
                         <h3 className={styles.popupDescr}>Описание</h3>
                         <p className={styles.popupTxt}>{item.descr}</p>
@@ -92,17 +126,15 @@ export function FullCardItem({ item, onClose}) {
 
                           <span className={styles.chooseSize}>Выберите размер</span>
                           <div className={styles.sizeWrapper}>
-                            <button className={styles.popupSize}>36</button>
-                            <button className={styles.popupSize}>36</button>
-                            <button className={styles.popupSize}>36</button>
-                            <button className={styles.popupSize}>36</button>
-                            <button className={styles.popupSize}>36</button>
+                            {[35,36,37,38,39].map((item)=> (
+                                <button key={item} className={`${styles.popupSize} ${currentSize === item ? styles.active : ''}`} onClick={()=>handleSizeClick(item)}>{item}</button>
+                            ))}
                           </div>
                           <div className={styles.popupPrices}>
                             <p className={styles.newPrice}>{item.price}</p>
                             <p className={styles.oldPrice}>20 578</p>
                           </div>
-                          <button className={styles.popupOrderBtn} onClick={() => addToCart(item)}>Заказать</button>
+                          <button className={styles.popupOrderBtn} onClick={() => handleOrderData()}> Заказать </button>
                           <ul className={styles.popupPluses}>
                             <li className={styles.plusesItem}>Бесплатная доставка до двери</li>
                             <li className={styles.plusesItem}>Оплата заказа при получении</li>

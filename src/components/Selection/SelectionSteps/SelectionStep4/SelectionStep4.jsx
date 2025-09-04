@@ -7,7 +7,6 @@ import success from '../../../../assets/selection-final-phone/отпр.svg'
 export function SelectionStep4({ onSubmit, formData }) {
 
     const [currentImg, setCurrentImg] = useState(img)
-    const [isSubmitted, setIsSubmitted] = useState(false)
 
     const [contactData, setContactData] = useState({
             phone: '',
@@ -29,7 +28,6 @@ export function SelectionStep4({ onSubmit, formData }) {
                 return;
             }
 
-            setIsSubmitted(true)
             setCurrentImg(success)
     
             onSubmit({ 
@@ -55,7 +53,7 @@ export function SelectionStep4({ onSubmit, formData }) {
                         Получите подборку подходящих для вас моделей на почту
                     </p>
                     <form onSubmit={handleSubmit}>
-                        <input type="text" name='phone' value={contactData.phone} placeholder="Ваше Имя" onChange={handleInputChange} onSubmitted={isSubmitted}/>
+                        <input type="text" name='phone' value={contactData.phone} placeholder="Ваше Имя" onChange={handleInputChange} />
                         <input type="E-mail" name='email' value={contactData.email} placeholder="E-mail" onChange={handleInputChange}/>
                         <button className={styles.finalFormBtn}>
                             Получить

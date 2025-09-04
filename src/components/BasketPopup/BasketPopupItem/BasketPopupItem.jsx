@@ -3,9 +3,9 @@ import { useCart } from '../../CardContext';
 
 export default function BasketPopupItem ({ item }) {
 
-    
+    const {  removeFromCart } = useCart();
 
-    const { removeFromCart } = useCart();
+    // const { removeFromCart } = useCart();
 
     const handleDelete = (e) => {
     e.preventDefault();
@@ -20,7 +20,7 @@ export default function BasketPopupItem ({ item }) {
             </div>
             <div className={styles.contentItemDescr}>
                 <p>{item.descr}</p>
-                <b className={styles.itemMainPrice}>{item.price}</b>
+                <b className={styles.itemMainPrice}>{item.price} х {item.quantity}</b>
             </div>
             <div className={styles.contentItemDelete}>
                 <button className={styles.itemBasketBtn} onClick={handleDelete}></button>

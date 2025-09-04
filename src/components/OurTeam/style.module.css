@@ -1,5 +1,5 @@
 .ourTeam {
-    background: #484283 url(../../assets/Group\ 72.svg) no-repeat 100% 0;
+    background: var(--bg-color) url(../../assets/Group\ 72.svg) no-repeat 100% 0;
     padding: 60px 19%;
     color: #fff;
 }

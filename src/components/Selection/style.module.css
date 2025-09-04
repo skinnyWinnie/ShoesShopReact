@@ -1,6 +1,6 @@
 .selection {
-    background-color: #FFF4EE;
-    margin: 60px 19%;
+    background-color: var(--color-se-bg);
+    margin: 60px var(--padding-unit);
     padding: 40px 100px;
 }
 .selectionHeader {
@@ -17,7 +17,7 @@
     margin-bottom: 20px;
 }
 .selectionFormHeader {
-    color: #444B58;
+    color: var(--color-text);
     margin: 20px 0;
     font-weight: normal;
 }
@@ -29,9 +29,9 @@
     color: #808080;
 }
 .selectionNext {
-    color: #444B58;
+    color: var(--color-text);
     padding: 17px 42px;
-    background-color: #FFF4EE;
+    background-color: var(--color-se-bg);
     font-size: 16px;
     font-weight: bold;
     border-radius: 4px;
@@ -55,7 +55,7 @@
     left: 0;
     height: 20px;
     width: 20px;
-    border: 1px solid #DBBBA9;
+    border: 1px solid var(--color-small-text);
     margin-right: 10px;
     border-radius: 4px;
   }
@@ -68,7 +68,7 @@
     top: 0px;
     width: 5px;
     height: 10px;
-    border: solid #DBBBA9;
+    border: solid var(--color-small-text);
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
   }

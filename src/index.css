@@ -18,4 +18,20 @@ code {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --padding-unit: 19%;
+  --padding-1600: 10%;
+  --padding-laptop: 7%;
+  --bg-color: #484283;
+  --button-color: #F14F4F;
+  --color-text: #444B58;
+  --color-small-text: #DBBBA9;
+  --color-se-bg: #FFF4EE;
+  --color-gray: #B2B5BB;
+  --h2-size: 30px;
+  --h1-size: 36px;
+  --h3-size: 24px;
+  --p-size: 16px;
+  --price-size: 20px;
+  --btn-size: 16px;
+  --meni-size: 14px;
 }
